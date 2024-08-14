@@ -1,0 +1,1383 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --color-basico:#fff;
+    --color-principal:#683a61;
+    --color-secundario:#101419;
+}
+
+body {
+    background: linear-gradient(to right, #101419, #202436, #3f3150, #683a61, #954166);
+}
+
+/* Aqui inicia el codigo CSS de encabezado*/
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Rubik Wet Paint';
+    font-size: 27px;
+    color: var(--color-principal); 
+}
+.logo img {
+    margin-right: 5px; 
+    height: 45px; 
+}
+.barra-nav {
+    display: flex;
+}
+.barra-nav a {
+    color: var(--color-basico);
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.barra-nav a:hover {
+    border-bottom: 2px solid var(--color-basico);
+}
+header.sticky {
+    padding: 8px 17%;
+    background: var(--color-secundario);
+    backdrop-filter: blur(35px);
+}
+#menu-icon {
+    color: var(--color-basico);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+/* Aqui inicia el codigo CSS de la portada*/
+.portada {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #101419, #202436, #3f3150, #683a61, #954166);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+section {
+    padding: 0 19%;
+}
+.portada-texto h5 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-basico);
+    margin-bottom: 40px;
+}
+.portada-texto h4 {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--color-basico);
+    margin-bottom: 10px;
+}
+.portada-texto h1 {
+    font-family: 'Rubik Wet Paint';
+    font-size: 90px;
+    line-height: 1;
+    color: var(--color-basico);
+    margin: 0 0 45px;
+}
+.portada-texto p {
+    color: var(--color-basico);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.portada-img img {
+    width: 400px;
+    height: auto;
+}
+.portada-texto a {
+    display: inline-block;
+    color: var(--color-basico);
+    background: var(--color-principal);
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: .55s ease;
+}
+.portada-texto a:hover {
+    background:transparent;
+    border: 1px solid var(--color-basico);
+    transform: translateX(8px);
+}
+.portada-texto a.ctaa {
+    background:transparent;
+    border: 1px solid var(--color-basico);
+    margin: 20px;
+}
+.portada-texto a.ctaa i {
+    vertical-align: middle;
+    margin-left: 5px; 
+}
+.iconos {
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.iconos i {
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: #fff;
+    transition: all .55s ease;
+}
+.iconos i:hover {
+    color: var(--color-principal);
+    transform: translateY(-5px);
+}
+/* Portada responsiva*/
+@media (max-width:1340px) {
+    .portada-img img{
+        width: 100%;
+        height: auto;
+    }
+    .portada-texto h1 {
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .portada-texto h5 {
+        margin-top: 25px;
+    }
+}
+@media (max-width:1195px) {
+    section {
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .portada-texto {
+        padding-top: 115px;
+    }
+    .portada-img {
+        text-align: center;
+    }
+    .portada-img img {
+        width: 400px;
+        height: auto;
+    }
+    .portada {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .iconos {
+        display: none;  
+    }
+    .scroll-abajo {
+        display: none;
+    }
+}
+@media (max-width:990px) {
+    #menu-icon {
+        display: block;
+    }
+    .barra-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 60vh;
+        background: radial-gradient(circle, #683a61, #483355, #2e2b44, #1b202f, #101419); 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .barra-nav a {
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+    .barra-nav.open {
+        right: 0;
+    }
+}
+@media (max-width:680px) {
+    .portada-img img {
+        width: 300px;
+        height: auto;
+    }
+    .portada-texto h1{
+        font-size: 65px;
+    }
+    .portada-texto a.ctaa {
+        display: none;
+    }   
+}
+
+/* Estilo para los botones flotantes */
+.botones-flotantes {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column-reverse; 
+    gap: 10px;
+    z-index: 1000;
+}
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: var(--color-principal);
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: #fff; 
+    font-size: 29px;
+}
+.boton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.boton-photonis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F4C017;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+    transition: transform 0.3s ease;
+} 
+.boton-photonis i {
+    font-size: 20px;
+    margin-right: 8px;
+}
+.boton-photonis:hover {
+    transform: scale(1.05);
+}
+.boton-demo {
+    background: var(--color-secundario); 
+    margin-left: 170px;
+}
+.descargas {
+    font-weight: bold;
+    margin-right: 5px;
+}
+/* Responsivo boton flotante */
+@media (max-width: 768px) {
+    .botones-flotantes {
+      bottom: 15px;
+      right: 15px;
+      gap: 8px;
+    }
+    .boton {
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+    }
+    .boton-demo {
+        margin-left: 200px;
+    }
+    .boton-photonis {
+        display: none;
+    }
+}
+
+/* Aqui inicia el codigo CSS de la sesión de clanes*/
+.clanes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    padding: 40px 20px;
+    text-align: center;
+}
+.titulo-clanes {
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 3em;
+    color: var(--color-principal);
+    margin-bottom: 150px;
+}
+.contenedor-clanes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 40px; 
+}
+.carta {
+    position: relative;
+    width: 350px;
+    height: 180px;
+    background: #333;
+    transition: 0.5s;
+}
+.carta:hover {
+    height: 450px;
+}
+.carta .lineas {
+    position: absolute;
+    inset: 0;
+    background: #0000;
+    overflow: hidden;
+}
+.carta .lineas::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(to right top, transparent, #e7a90e, #d86b41, #a14555, #e7a90e, #1f1c24, transparent);
+    animation: animate 4s linear infinite;
+    animation-play-state: paused;
+}
+.carta:hover .lineas::before {
+    animation-play-state: running;
+}
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.carta .lineas::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #000;
+}
+.carta .imgCaja {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translateX(-50%);
+    background: var(--color-secundario);
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carta:hover .imgCaja {
+    top: 25px;
+    width: 200px;
+    height: 200px;
+}
+.carta .imgCaja::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right top, transparent, #e7a90e, #d86b41, #a14555, #e7a90e, #1f1c24, transparent);
+    animation: animate2 6s linear infinite;
+    animation-play-state: paused;
+}
+.carta:hover .imgCaja::before{
+    animation-play-state: running;
+}
+@keyframes animate2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+.carta .imgCaja::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: var(--color-secundario);
+}
+.carta .imgCaja img {
+    position: absolute;
+    width: 100px;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.carta:hover .imgCaja img {
+    opacity: 1;
+}
+.carta .contenido {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.carta .contenido .detalles {
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(145px);
+}
+.carta:hover .contenido .detalles {
+    transform: translateY(0px);
+}
+.carta .contenido .detalles h2 {
+    font-family: 'Rubik Wet Paint';
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--color-principal);
+    line-height: 1.2em;
+}
+.carta .contenido .detalles p {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-basico);
+    opacity: 0;
+    transition: 0.5s;
+}
+.carta .contenido .detalles a {
+    display: inline-block;
+    padding: 11px 23px;
+    border-radius: 50px;
+    background: var(--color-principal);
+    color: #000;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0px;
+    transition: 0.5s;
+}
+.carta .contenido .detalles a i {
+    margin-left: 5px; 
+    font-size: 1em;
+}
+.carta .contenido .detalles a:hover {
+    color: var(--color-principal);
+    background:transparent;
+    border: 1px solid var(--color-principal);
+    transform: translateX(8px);
+}
+.carta:hover .contenido .detalles p,
+.carta:hover .contenido .detalles a {
+    opacity: 1;
+}
+/* clanes responsivo*/
+@media (max-width: 1200px) {
+    .contenedor-clanes {
+        gap: 20px;
+    }
+    .carta {
+        width: 300px;
+    }
+}
+@media (max-width: 992px) {
+    .contenedor-clanes {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .carta {
+        width: 45%;
+        margin-bottom: 20px;
+        transition: height 0.5s;
+    }
+}
+@media (max-width: 768px) {
+    .contenedor-clanes {
+        gap: 20px;
+    }
+    .carta {
+        width: 100%;
+        margin-bottom: 21px;
+        transition: height 0.5s; 
+    }
+    .carta:hover {
+        height: 450px; 
+    }
+    .carta .imgCaja {
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .carta:hover .imgCaja {
+        top: 25px; 
+        width: 200px;
+        height: 200px;
+    }
+    .carta .contenido .detalles {
+        transform: translateY(145px);
+        transition: transform 0.5s; 
+    }
+    .carta:hover .contenido .detalles {
+        transform: translateY(0px); 
+    }
+    .titulo-clanes {
+        font-size: 2.3em;
+    }
+}
+
+/* Aqui inicia el codigo CSS de la sesión de villanos*/
+.villanos {
+    width: 100%;
+    min-height: 123vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    background: url(/imgs/villanos-fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.contenedor {
+    width: 90%;
+    height: 100%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 60px;
+    padding: 35px;
+}
+.contenido-izquierdo,
+.contenido-derecho {
+    width: 100%;
+}
+.contenido-izquierdo .fila {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.contenido-izquierdo .fila .img-villanos {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 11px;
+    cursor: pointer;
+    box-shadow: 5px 10px 10px rgb(0, 0, 0, 0.15);
+}
+.contenido-izquierdo .fila .img-villanos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    transition: 0.3s;
+}
+.contenido-izquierdo .fila .img-villanos:hover img {
+    transform: scale(1.5);
+}
+.contenido-izquierdo .fila .img-villanos:nth-child(odd) {
+    transform: translateY(-20px);
+}
+.contenido-izquierdo .fila .img-villanos:nth-child(even) {
+    transform: translateY(20px);
+}
+.contenido-derecho .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.contenido-derecho .contenido h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--color-principal);
+}
+.contenido-derecho .contenido h2 {
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 3em;
+    color: var(--color-principal);
+}
+.contenido-derecho .contenido p {
+    font-size: 17px;
+    color: var(--color-basico);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.contenido-derecho .contenido a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 13px 27px;
+    color: #000;
+    background: var(--color-principal);
+    border-radius: 50px;
+    user-select: none;
+}
+.contenido-derecho .contenido i {
+    margin-left: 5px; 
+    font-size: 1em;
+}
+.contenido-derecho .contenido a:hover {
+    color: var(--color-principal);
+    background:transparent;
+    border: 1px solid  var(--color-principal);
+    transform: translateX(8px);
+}
+/* villanos responsivo*/
+@media(max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+    .contenido-izquierdo .fila {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contenido-izquierdo .fila .img-villanos {
+        height: 200px;
+    }
+    .contenido-derecho .contenido h4 {
+        font-size: 17px;
+    }
+    .contenido-derecho .contenido h2 {
+        font-size: 2.3em;
+    }
+}
+
+/* Aqui inicia el codigo CSS de la sesión de heroes*/
+.heroes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 170vh;
+    background: #000;
+}
+.intro-heroes {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.intro-heroes h1 {
+    font-family: 'Rubik Wet Paint', cursive;
+    color: var(--color-principal);
+    text-transform: uppercase;
+    font-size: 3em;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+.intro-heroes p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--color-basico);
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.contenedor-heroes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.carta-heroes {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 7px;
+    display: flex;
+    transition: 0.5s;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(to right, #101419, #202436, #3f3150, #683a61, #954166);
+}
+.carta-heroes img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 350px;
+    transition: 0.5s;
+}
+.carta-heroes:hover img {
+    left: 73%;
+    height: 450px;
+}
+.carta-heroes .contenido-heroes {
+    position: relative;
+    width: 50%;
+    left: 7%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.carta-heroes:hover .contenido-heroes {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.carta-heroes .contenido-heroes h2 {
+    font-family: 'Rubik Wet Paint', cursive;
+    color: var(--color-basico);
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 13px;
+}
+.carta-heroes .contenido-heroes p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: var(--color-basico);
+    font-size: 15px;
+}
+.carta-heroes .contenido-heroes a {
+    position: relative;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    background: var(--color-principal);
+    display: inline-block;
+    padding: 11px 21px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 13px;
+}
+.carta-heroes .contenido-heroes i {
+    margin-left: 5px; 
+    font-size: 1em;
+}
+.carta-heroes .contenido-heroes a:hover {
+    color: var(--color-principal);
+    background: transparent;
+    border: 1px solid var(--color-principal);
+    transform: translateX(8px);
+}
+/* heroes responsivo*/
+@media (max-width: 991px) {
+    .contenedor-heroes {
+        margin-bottom: 5px;
+        grid-template-columns: 1fr;
+    }
+    .contenedor-heroes .carta-heroes {
+        width: auto;
+        max-width: 600px;
+        margin: 40px 20px;
+        align-items: flex-start;
+    }
+    .contenedor-heroes .carta-heroes:hover {
+        height: 600px;
+    }
+    .contenedor-heroes .carta-heroes:hover img {
+        left: 50%;
+        height: 320px;
+    }
+    .contenedor-heroes .carta-heroes .contenido-heroes {
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .contenedor-heroes {
+        grid-template-columns: 1fr;
+    }
+    .contenedor-heroes .carta-heroes {
+        margin: 40px 20px;
+    }
+}
+@media (max-width: 400px) {
+    .intro-heroes h1 {
+        margin-top: 45px;
+        font-size: 2em;
+    }
+    .intro-heroes p {
+        font-size: 15px;
+    }
+    .contenedor-heroes .carta-heroes .contenido-heroes {
+        padding: 30px;
+    }
+    .contenedor-heroes .carta-heroes:hover img {
+        height: 320px;
+    }
+}
+
+/* Aqui inicia el codigo CSS de la sesión armas*/
+.armas {
+    padding: 100px;
+    text-align: center;
+    background: #000;
+}
+.armas h2 {
+    font-family: 'Rubik Wet Paint', cursive;
+    color: var(--color-principal);
+    text-transform: uppercase;
+    font-size: 3em;
+    line-height: 1em;
+    margin-bottom: 20px;
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.carousel-item {
+    background: linear-gradient(to right, #101419, #202436, #3f3150, #683a61, #954166);
+    color: var(--color-basico);
+    margin: 11px;
+    padding: 21px;
+    border-radius: 5px;
+    text-align: left;
+    flex: 1 1 200px;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+.carousel-item img {
+    width: 39%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 11px;
+}
+.carousel-item p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+.carousel-item span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+/* armas responsivo*/
+@media (max-width: 768px) {
+    .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+    .carousel-item {
+        max-width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    .carousel-item {
+        max-width: 120%;
+    }
+    .armas h2 {
+        font-size: 2em
+    }
+}
+
+/* Aqui inicia el codigo CSS de la sesión de mundo de photonis*/
+.mundo-photonis {
+    text-align: center;
+    padding: 50px 20px;
+}
+.titulo-seccion {
+    font-family: 'Rubik Wet Paint', cursive;
+    color: var(--color-basico);
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.contenido-photonis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.informacion-photonis {
+    flex: 1;
+    max-width: 500px;
+    margin: 20px;
+    text-align: left;
+}
+.nombre-photonis {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: var(--color-basico);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.descripcion-photonis {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: var(--color-basico);
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 23px;
+}
+.informacion-photonis a {
+    display: inline-block;
+    color: #000;
+    background: var(--color-principal);
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: .55s ease;
+}
+.informacion-photonis i {
+    margin-left: 5px; 
+    font-size: 1em;
+}
+.informacion-photonis a:hover {
+    background:transparent;
+    color: var(--color-principal);
+    border: 1px solid var(--color-principal);
+    transform: translateX(8px); 
+}
+.imagenes-photonis {
+    flex: 1;
+    max-width: 500px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+}
+.carrusel-photonis {
+    position: relative;
+    overflow: hidden;
+}
+.carrusel-photonis img {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.carrusel-photonis .imagen-activa {
+    display: block;
+}
+.controles {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.control-izquierda, .control-derecha {
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0 10px;
+    color: var(--color-basico);
+}
+/* mundo photonis responsivo*/
+@media (max-width: 768px) {
+    .contenido-photonis {
+        flex-direction: column;
+    }
+    .informacion-photonis, .imagenes-photonis {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    .titulo-seccion {
+        font-size: 2.3em;
+    }
+    .nombre-photonis {
+        font-size: 1.3em;
+    }
+}
+
+/* Aqui inicia el codigo CSS de la sesión comunidad*/
+.seccion-comunidad {
+    padding: 50px 20px;
+    background: #000;
+    text-align: center;
+    align-items: center;
+    background: url(/imgs/comunidad-fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.titulo-comunidad {
+    font-family: 'Rubik Wet Paint';
+    color: var(--color-principal);
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+.noticia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.imagen-noticia {
+    flex: 1;
+    max-width: 400px;
+    margin: 20px;
+    width: 100%;
+    height: auto;
+}
+.contenido-noticia {
+    flex: 2;
+    max-width: 600px;
+    margin: 20px;
+    text-align: left;
+}
+.titulo-noticia {
+    font-family: 'Rubik Wet Paint';
+    color: var(--color-principal);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.descripcion-noticia {
+    color: var(--color-basico);
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.boton-leer-mas {
+    display: inline-block;
+    color: var(--color-secundario);
+    background: var(--color-principal);
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: .55s ease;
+}
+.boton-leer-mas i {
+    margin-left: 5px; 
+    font-size: 1em;
+}
+.boton-leer-mas:hover {
+    color:var(--color-principal);
+    background: transparent;
+    border: 1px solid var(--color-principal);
+}
+/* comunidad responsivo*/
+@media (max-width: 768px) {
+    .seccion-comunidad {
+        background: none;
+    }
+    .titulo-comunidad {
+        color: var(--color-basico);
+    }
+    .titulo-noticia {
+        color: var(--color-basico);
+    }
+    .noticia {
+        flex-direction: column;
+    }
+    .imagen-noticia, .contenido-noticia {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Aqui inicia el codigo CSS de la sesión comprar videojuego*/
+.seccion-portada {
+    background: #000;
+    text-align: center;
+    padding: 50px 20px;
+}
+.imagen-portada {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.botones-portada {
+    margin-top: 20px;
+}
+.boton-portada {
+    display: inline-block;
+    color: #000;
+    background: var(--color-principal);
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    margin-right: 11px;
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: .55s ease;
+}
+.boton-portada i {
+    margin-left: 5px; 
+    font-size: 1em;
+}
+.boton-portada:hover {
+    color: var(--color-principal);
+    background: transparent;
+    border: 1px solid var(--color-principal);
+}
+.boton-portada.secundario {
+    color: var(--color-principal);
+    background: transparent;
+    border: 1px solid var(--color-principal);
+}
+.boton-portada i {
+    margin-left: 5px; 
+    font-size: 1em;
+}
+.boton-portada.secundario:hover {
+    color: #000;
+    background: var(--color-principal);
+}
+.caracteristicas-portada {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.caracteristica {
+    background: linear-gradient(to right, #101419, #202436, #3f3150, #683a61, #954166);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    flex: 1 1 30%;
+    text-align: center;
+}
+.icono i {
+    font-size: 2em;
+    color: #fff;
+}
+.caracteristica h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--color-basico);
+    font-size: 1em;
+    margin: 15px 0;
+}
+.flecha {
+    font-size: 2.3em;
+    text-decoration: none;
+    color: #fff;
+}
+/* comparar videojuego responsivo */
+@media (max-width: 768px) {
+    .titulo-comunidad {
+        font-size: 2.3em;
+    }
+    .caracteristicas-portada {
+        flex-direction: column;
+        align-items: center;
+    } 
+    .boton-portada {
+        margin-top: 9px;
+    }
+    .caracteristica {
+        width: 100%;
+        max-width: 90%;
+        margin: 10px 0;
+    }
+}
+
+/* Aqui inicia el codigo CSS de la sesión de suscripcion*/
+.seccion-suscripcion {
+    background: #000;
+    padding: 50px 20px;
+}
+.contenido-suscripcion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-suscripcion {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+}
+.imagen-suscripcion img {
+    width: 100%;
+    height: auto;
+}
+.texto-suscripcion {
+    flex: 2;
+    max-width: 600px;
+    margin: 20px;
+    text-align: left;
+}
+.subtitulo-suscripcion {
+    font-family: 'Rubik Wet Paint';
+    color: var(--color-principal);
+    font-size: 2.5em;
+    margin-bottom: 21px;
+}
+.descripcion-suscripcion {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--color-basico);
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.formulario-suscripcion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.formulario-suscripcion input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.formulario-suscripcion a {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: var(--color-principal);
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+.formulario-suscripcion a:hover {
+    background: transparent;
+    color: var(--color-principal);
+    border: 1px solid var(--color-principal);
+    transform: translateX(8px);
+}
+
+/* suscripcion responsivo */
+@media (max-width: 768px) {
+    .subtitulo-suscripcion {
+        font-size: 2em;
+    }
+    .contenido-suscripcion {
+        flex-direction: column;
+    }
+    .imagen-suscripcion, .texto-suscripcion {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    .formulario-suscripcion {
+        flex-direction: column; 
+        width: 100%; 
+    }
+    .formulario-suscripcion input,
+    .formulario-suscripcion a {
+        flex: none; 
+        width: 100%; 
+        margin-bottom: 3px;
+    }
+}
+
+/* Aqui inicia el codigo CSS de la sesión footer*/
+.pie-de-pagina {
+    background: radial-gradient(circle, #683a61, #483355, #2e2b44, #1b202f, #101419); 
+    color: var(--color-basico);
+    padding: 20px 10px;
+    text-align: center;
+}
+.contenedor-pie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo-pie,
+.enlaces-pie,
+.contactos-pie {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+.logo-pie img {
+    max-width: 75px;
+}
+.iconos-sociales-pie {
+    margin-top: 20px;
+}
+.icono-social {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 21px; 
+    color: #fff; 
+}
+.icono-social:hover {
+    color: var(--color-principal); 
+}
+.enlaces-pie h4,
+.contactos-pie h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.enlaces-pie ul {
+    list-style: none;
+    padding: 0;
+}
+.enlaces-pie ul li {
+    margin-bottom: 10px;
+}
+.enlaces-pie ul li a {
+    color: var(--color-basico);
+    text-decoration: none;
+}
+.enlaces-pie ul li a:hover {
+    text-decoration: underline;
+}
+.contactos-pie p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+.contactos-pie p  i {
+    font-size: 1.3em;
+}
+.fondo-pie {
+    margin-top: 20px;
+    border-top: 1px solid var(--color-principal);
+    padding-top: 10px;
+}
+.fondo-pie p {
+    margin: 0;
+    font-weight: 200;
+    font-size: 0.9em;
+    color: var(--color-basico);
+}
+/* footer responsivo */
+@media (max-width: 768px) {
+    .contenedor-pie {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-pie,
+    .enlaces-pie,
+    .contactos-pie {
+        flex: 1 1 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
