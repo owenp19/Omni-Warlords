@@ -1,14 +1,14 @@
-![Photonis](/imgs/logo-presentacion.png)
+![OmniWarlords](/imgs/logo-presentacion.png)
 
-# Manual de Usuario - Pagina Web de Photonis
+# Manual de Usuario - Pagina Web de OmniWarlords
 
-![Portada Photonis](/imgs/portada.png)
+![Portada OmniWarlords](/imgs/portada.png)
 
 ## Introducción
 
-Este manual proporciona una guía completa para navegar y utilizar el sitio web oficial de Photonis. Aquí aprenderás cómo acceder a las diferentes secciones del sitio, conocer a los héroes y villanos, unirte a la comunidad, y suscribirte para recibir las últimas noticias.
+Este manual proporciona una guía completa para navegar y utilizar la pagina web oficial de OmniWarlords. Aquí aprenderás cómo acceder a las diferentes secciones del sitio, conocer a los héroes y villanos, unirte a la comunidad, y suscribirte para recibir las últimas noticias.
 
-## Navegación del Sitio
+## Navegación de la pagina
 
 ### Menú Principal
 
@@ -49,7 +49,7 @@ Para suscribirte a nuestro boletín de noticias:
 
 ### Problemas Comunes
 
-- **De la Pagina Web no carga correctamente:** Asegúrate de tener una conexión a internet estable y de usar un navegador actualizado.
+- **La Pagina Web no carga correctamente:** Asegúrate de tener una conexión a internet estable y de usar un navegador actualizado.
 - **Problemas al registrarse:** Verifica que todos los campos obligatorios estén completados correctamente y que el correo electrónico ingresado sea válido.
 
 Para más problemas, visita nuestra página de [Soporte](#) o contacta al equipo de atención al cliente.
