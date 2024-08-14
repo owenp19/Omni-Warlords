@@ -1,8 +1,8 @@
-# Ejemplos de Uso de la pagina Web de Photonis
+# Ejemplos de Uso de la pagina Web de OmniWarlords
 
 ## Ejemplo 1: Exploración de Clanes
 
-En la sección de "Clanes", puedes obtener información detallada sobre los diferentes clanes que habitan el universo de Photonis, incluyendo sus historias, miembros clave, y más.
+En la sección de "Clanes", puedes obtener información detallada sobre los diferentes clanes que habitan el universo de OmniWarlords, incluyendo sus historias, miembros clave, y más.
 
 1. Ve a la sección "Clanes" desde el menú principal.
 2. Explora los diferentes clanes listados.
