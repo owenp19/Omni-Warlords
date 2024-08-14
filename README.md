@@ -26,7 +26,7 @@ Bienvenido al repositorio del sitio web oficial de OmniWarlords. Este sitio est√
 
 2. Navega al directorio del proyecto:
     ```bash
-    cd photonis-website
+    cd OmniWarlords-website
     ```
 
 3. Instala las dependencias:
