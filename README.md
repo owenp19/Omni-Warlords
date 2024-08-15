@@ -1,19 +1,19 @@
-![Photonis](/imgs/logo-presentacion.png)
+![Omni Warlords](/imgs/logo-presentacion.png)
 
-# Photonis - Pagina Web Oficial
+# Omni Warlords - Pagina Web Oficial
 
-![Portada Photonis](/imgs/portada.png)
+![Portada Omni Warlords](/imgs/portada.png)
 
-Bienvenido al repositorio del sitio web oficial de Photonis. Este sitio está diseñado para proporcionar a los usuarios información detallada sobre los clanes, villanos, héroes, y más, así como para promover la comunidad del juego.
+Bienvenido al repositorio de la pagina web oficial de Omni Warlords. Este sitio está diseñado para proporcionar a los usuarios información detallada sobre los clanes, villanos, héroes, y más, así como para promover la comunidad del juego.
 
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ## Secciones de la Pagina Web
 
 - **Inicio:** Información destacada y enlaces rápidos a las principales secciones del sitio.
-- **Clanes:** Descubre los clanes que dominan el universo de Photonis.
+- **Clanes:** Descubre los clanes que dominan el universo de Omni Warlords.
 - **Villanos:** Conoce a los principales antagonistas y sus historias.
-- **Héroes:** Explora los personajes que luchan por la paz y justicia en Photonis.
+- **Héroes:** Explora los personajes que luchan por la paz y justicia en Omni Warlords.
 - **Comunidad:** Únete a la comunidad de jugadores y participa en eventos y foros.
 - **Suscripción:** Regístrate para recibir actualizaciones, noticias y acceso exclusivo a contenido.
 
@@ -26,7 +26,7 @@ Bienvenido al repositorio del sitio web oficial de Photonis. Este sitio está di
 
 2. Navega al directorio del proyecto:
     ```bash
-    cd photonis-website
+    cd Omni Warlords-pagina web
     ```
 
 3. Instala las dependencias:
