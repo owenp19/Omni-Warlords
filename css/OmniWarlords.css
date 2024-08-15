@@ -263,7 +263,7 @@ section {
     cursor: pointer;
     transform: scale(1.1);
 }
-.boton-photonis {
+.boton-Warlords {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,11 +275,11 @@ section {
     font-size: 17px;
     transition: transform 0.3s ease;
 } 
-.boton-photonis i {
+.boton-Warlords i {
     font-size: 20px;
     margin-right: 8px;
 }
-.boton-photonis:hover {
+.boton-Warlords:hover {
     transform: scale(1.05);
 }
 .boton-demo {
@@ -305,7 +305,7 @@ section {
     .boton-demo {
         margin-left: 200px;
     }
-    .boton-photonis {
+    .boton-Warlords {
         display: none;
     }
 }
@@ -898,8 +898,8 @@ section {
     }
 }
 
-/* Aqui inicia el codigo CSS de la sesión de mundo de photonis*/
-.mundo-photonis {
+/* Aqui inicia el codigo CSS de la sesión de mundo de orionis*/
+.mundo-orionis {
     text-align: center;
     padding: 50px 20px;
 }
@@ -909,26 +909,26 @@ section {
     font-size: 3em;
     margin-bottom: 20px;
 }
-.contenido-photonis {
+.contenido-orionis {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.informacion-photonis {
+.informacion-orionis {
     flex: 1;
     max-width: 500px;
     margin: 20px;
     text-align: left;
 }
-.nombre-photonis {
+.nombre-orionis {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: var(--color-basico);
     font-size: 1.5em;
     margin-bottom: 10px;
 }
-.descripcion-photonis {
+.descripcion-orionis {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: var(--color-basico);
@@ -936,7 +936,7 @@ section {
     line-height: 1.5;
     margin-bottom: 23px;
 }
-.informacion-photonis a {
+.informacion-orionis a {
     display: inline-block;
     color: #000;
     background: var(--color-principal);
@@ -948,33 +948,33 @@ section {
     border-radius: 30px;
     transition: .55s ease;
 }
-.informacion-photonis i {
+.informacion-orionis i {
     margin-left: 5px; 
     font-size: 1em;
 }
-.informacion-photonis a:hover {
+.informacion-orionis a:hover {
     background:transparent;
     color: var(--color-principal);
     border: 1px solid var(--color-principal);
     transform: translateX(8px); 
 }
-.imagenes-photonis {
+.imagenes-orionis {
     flex: 1;
     max-width: 500px;
     margin: 20px;
     position: relative;
     text-align: center;
 }
-.carrusel-photonis {
+.carrusel-orionis {
     position: relative;
     overflow: hidden;
 }
-.carrusel-photonis img {
+.carrusel-orionis img {
     display: none;
     width: 100%;
     height: auto;
 }
-.carrusel-photonis .imagen-activa {
+.carrusel-orionis .imagen-activa {
     display: block;
 }
 .controles {
@@ -991,19 +991,19 @@ section {
     padding: 0 10px;
     color: var(--color-basico);
 }
-/* mundo photonis responsivo*/
+/* mundo orionis responsivo*/
 @media (max-width: 768px) {
-    .contenido-photonis {
+    .contenido-orionis {
         flex-direction: column;
     }
-    .informacion-photonis, .imagenes-photonis {
+    .informacion-orionis, .imagenes-orionis {
         max-width: 100%;
         margin: 10px 0;
     }
     .titulo-seccion {
         font-size: 2.3em;
     }
-    .nombre-photonis {
+    .nombre-orionis {
         font-size: 1.3em;
     }
 }

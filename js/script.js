@@ -25,7 +25,7 @@ sr.reveal('.iconos i',{delay:500, origin:'left'});
 sr.reveal('.scroll-abajo',{delay:500, origin:'rigth'});
 
 document.addEventListener('DOMContentLoaded', function() {
-    const imagenes = document.querySelectorAll('.carrusel-photonis img');
+    const imagenes = document.querySelectorAll('.carrusel-orionis img');
     const flechaIzquierda = document.querySelector('.control-izquierda');
     const flechaDerecha = document.querySelector('.control-derecha');
     let indiceActual = 0;
