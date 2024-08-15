@@ -21,7 +21,7 @@ Bienvenido al repositorio de la pagina web oficial de Omni Warlords. Este sitio 
 
 1. Clona este repositorio:
     ```bash
-    git clone https://github.com/tu-usuario/photonis-website.git
+    git clone [https://github.com/owenp19/OmniWarlords.git]
     ```
 
 2. Navega al directorio del proyecto:

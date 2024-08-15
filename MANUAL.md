@@ -8,7 +8,7 @@
 
 Este manual proporciona una guía completa para navegar y utilizar el sitio web oficial de Omni Warlords. Aquí aprenderás cómo acceder a las diferentes secciones del sitio, conocer a los héroes y villanos, unirte a la comunidad, y suscribirte para recibir las últimas noticias.
 
-## Navegación del Sitio
+## Navegación de la pagina
 
 ### Menú Principal
 
@@ -49,6 +49,7 @@ Para suscribirte a nuestro boletín de noticias:
 
 ### Problemas Comunes
 
+- **La Pagina Web no carga correctamente:** Asegúrate de tener una conexión a internet estable y de usar un navegador actualizado.
 - **La Pagina Web no carga correctamente:** Asegúrate de tener una conexión a internet estable y de usar un navegador actualizado.
 - **Problemas al registrarse:** Verifica que todos los campos obligatorios estén completados correctamente y que el correo electrónico ingresado sea válido.
 
